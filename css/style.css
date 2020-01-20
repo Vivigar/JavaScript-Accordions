@@ -5,28 +5,37 @@
  }
 
  html, body {
-     background-color: #e2e2e2;
+     background-color: #222;
+ }
+
+.title {
+    margin-top: 1em;
+    text-align: center;
+    color: white;
+}
+
+ .wrapper {
+     max-width: 50%;
+     margin: 3em auto;
  }
 
  .accordion {
      margin: 5px;
-     background: #333;
+     background: #cecece;
      color: white;
-     max-width: 450px;
+     border-radius: 5px;
      position: relative;
  }
 
  .accordion-header {
-     background: red;
-     padding: 5px;
+     background: rgb(151, 41, 41);
+     padding: 20px;
+     border-radius: 5px;
+     text-shadow: black 2px;
  }
 
- .accordion-header::after {
-     content: 'V';
-     display: inline-block;
-     position: absolute;
-     right: 15px;
-
+ .accordion-header:active {
+    background: rgb(212, 35, 35);
  }
 
  .accordion-body {
@@ -34,6 +43,35 @@
      overflow: hidden;
      padding: 0 5px;
      transition: max-height ease-in-out 0.5s, padding ease-in-out 0.5s;
-
+     color: black;
  }
  
+ #skyline .accordion-header {
+     background: url(https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+     background-size: auto;
+     background-position: center;
+ }
+
+ #trees .accordion-header {
+     background: url(https://www.pexels.com/photo/361104/download/?search_query=Mountain&tracking_id=wzpvgeq8ut_);
+     background-size: cover;
+     background-position: center;
+ }
+
+ p {
+     margin-top: 5px;
+ }
+
+ .accordion-body img {
+     width: 50%;
+     text-align: left;
+     display: inline;
+     border: 1px solid black;
+     padding: 5px;
+     margin: 5px;
+     margin-left: 0;
+ }
+
+ h3 {
+     margin: 5px 0;
+ }
